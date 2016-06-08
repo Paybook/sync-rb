@@ -4,7 +4,7 @@
 
 HTTPARTY => Install HTTPARTY gem
 ```ruby
-gem 'httparty'
+gem install 'httparty'
 ```
 
 
@@ -13,7 +13,7 @@ gem 'httparty'
 Install the Paybook API Gem Using this command into the terminal / cmd:
 
 ```ruby
-gem install paybook
+gem install 'paybook'
 ```
 
 ## Usage
