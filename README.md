@@ -10,7 +10,7 @@ gem 'httparty'
 
 ## Installation Paybook Gem
 
-Add this line to your application's Gemfile:
+Install the Paybook API Gem Using this command into the terminal / cmd:
 
 ```ruby
 gem install paybook
