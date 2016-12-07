@@ -40,7 +40,7 @@ module Paybook
 			return self.connect(data, 'get', '/catalogues/sites')
 		end
 		
-		def get_contries
+		def get_countries
 			data = {
 				:api_key => @api_key
 			}
@@ -92,13 +92,39 @@ module Paybook
 			return self.connect('delete', '/sessions/' + token)
 		end
 		
-		def register_credentials(id_user, token)
+		def register_credentials(id_user, id_site, token, credentials)
 			data = {
 				:api_key => @api_key,
-				:id_user => id_user,
-				:token => token
+				:id_site => id_site,
+        :id_user => id_user,
+				:token => token,
+        :credentials => credentials
 			}
 			return self.connect(data, 'get', '/credentials')
+		end
+		
+		def get_accounts(token)
+			data = {
+				:api_key => @api_key,
+				:token => token
+			}
+			return self.connect(data, 'get', '/accounts')
+		end
+		
+		def get_transactions(token)
+			data = {
+				:api_key => @api_key,
+				:token => token
+			}
+			return self.connect(data, 'get', '/transactions')
+		end
+		
+		def get_attachments(token)
+			data = {
+				:api_key => @api_key,
+				:token => token
+			}
+			return self.connect(data, 'get', '/attachments')
 		end
 	end
 end
