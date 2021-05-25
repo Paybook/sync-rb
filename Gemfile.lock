@@ -11,16 +11,16 @@ GEM
       multi_xml (>= 0.5.2)
     json (1.8.3)
     multi_xml (0.5.5)
-    rake (10.5.0)
+    rake (13.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.12)
+  bundler (~> 2.2.10)
   httparty
   paybook!
-  rake (~> 10.0)
+  rake (~> 13.0)
 
 BUNDLED WITH
    1.12.3
