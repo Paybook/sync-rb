@@ -4,7 +4,7 @@ require "httparty"
 module Paybook
 	class Api
 		include HTTParty
-		base_uri 'https://sync.paybook.com/v1'
+		base_uri 'https://opendata-api.syncfy.com/v1'
 
 		format :json
 
